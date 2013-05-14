@@ -7,11 +7,11 @@
 // --------------------------------------------------
 
 // Core
-.btn {
+.bs-btn {
   display: inline-block;
   .ie7-inline-block();
   padding: 4px 12px;
-  margin-bottom: 0; // For input.btn
+  margin-bottom: 0; // For input.bs-btn
   font-size: @baseFontSize;
   line-height: @baseLineHeight;
   text-align: center;
@@ -67,33 +67,33 @@
 // --------------------------------------------------
 
 // Large
-.btn-large {
+.bs-btn-large {
   padding: @paddingLarge;
   font-size: @fontSizeLarge;
   .border-radius(@borderRadiusLarge);
 }
-.btn-large [class^="icon-"],
-.btn-large [class*=" icon-"] {
+.bs-btn-large [class^="icon-"],
+.bs-btn-large [class*=" icon-"] {
   margin-top: 4px;
 }
 
 // Small
-.btn-small {
+.bs-btn-small {
   padding: @paddingSmall;
   font-size: @fontSizeSmall;
   .border-radius(@borderRadiusSmall);
 }
-.btn-small [class^="icon-"],
-.btn-small [class*=" icon-"] {
+.bs-btn-small [class^="icon-"],
+.bs-btn-small [class*=" icon-"] {
   margin-top: 0;
 }
-.btn-mini [class^="icon-"],
-.btn-mini [class*=" icon-"] {
+.bs-btn-mini [class^="icon-"],
+.bs-btn-mini [class*=" icon-"] {
   margin-top: -1px;
 }
 
 // Mini
-.btn-mini {
+.bs-btn-mini {
   padding: @paddingMini;
   font-size: @fontSizeMini;
   .border-radius(@borderRadiusSmall);
@@ -103,7 +103,7 @@
 // Block button
 // -------------------------
 
-.btn-block {
+.bs-btn-block {
   display: block;
   width: 100%;
   padding-left: 0;
@@ -112,7 +112,7 @@
 }
 
 // Vertically space out multiple block buttons
-.btn-block + .btn-block {
+.bs-btn-block + .bs-btn-block {
   margin-top: 5px;
 }
 
@@ -120,7 +120,7 @@
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-  &.btn-block {
+  &.bs-btn-block {
     width: 100%;
   }
 }
@@ -131,38 +131,38 @@ input[type="button"] {
 // --------------------------------------------------
 
 // Provide *some* extra contrast for those who can get it
-.btn-primary.active,
-.btn-warning.active,
-.btn-danger.active,
-.btn-success.active,
-.btn-info.active,
-.btn-inverse.active {
+.bs-btn-primary.active,
+.bs-btn-warning.active,
+.bs-btn-danger.active,
+.bs-btn-success.active,
+.bs-btn-info.active,
+.bs-btn-inverse.active {
   color: rgba(255,255,255,.75);
 }
 
 // Set the backgrounds
 // -------------------------
-.btn-primary {
+.bs-btn-primary {
   .buttonBackground(@btnPrimaryBackground, @btnPrimaryBackgroundHighlight);
 }
 // Warning appears are orange
-.btn-warning {
+.bs-btn-warning {
   .buttonBackground(@btnWarningBackground, @btnWarningBackgroundHighlight);
 }
 // Danger and error appear as red
-.btn-danger {
+.bs-btn-danger {
   .buttonBackground(@btnDangerBackground, @btnDangerBackgroundHighlight);
 }
 // Success appears as green
-.btn-success {
+.bs-btn-success {
   .buttonBackground(@btnSuccessBackground, @btnSuccessBackgroundHighlight);
 }
 // Info appears as a neutral blue
-.btn-info {
+.bs-btn-info {
   .buttonBackground(@btnInfoBackground, @btnInfoBackgroundHighlight);
 }
 // Inverse appears as dark gray
-.btn-inverse {
+.bs-btn-inverse {
   .buttonBackground(@btnInverseBackground, @btnInverseBackgroundHighlight);
 }
 
@@ -170,8 +170,8 @@ input[type="button"] {
 // Cross-browser Jank
 // --------------------------------------------------
 
-button.btn,
-input[type="submit"].btn {
+button.bs-btn,
+input[type="submit"].bs-btn {
 
   // Firefox 3.6 only I believe
   &::-moz-focus-inner {
@@ -183,15 +183,15 @@ input[type="submit"].btn {
   *padding-top: 3px;
   *padding-bottom: 3px;
 
-  &.btn-large {
+  &.bs-btn-large {
     *padding-top: 7px;
     *padding-bottom: 7px;
   }
-  &.btn-small {
+  &.bs-btn-small {
     *padding-top: 3px;
     *padding-bottom: 3px;
   }
-  &.btn-mini {
+  &.bs-btn-mini {
     *padding-top: 1px;
     *padding-bottom: 1px;
   }
@@ -202,27 +202,27 @@ input[type="submit"].btn {
 // --------------------------------------------------
 
 // Make a button look and behave like a link
-.btn-link,
-.btn-link:active,
-.btn-link[disabled] {
+.bs-btn-link,
+.bs-btn-link:active,
+.bs-btn-link[disabled] {
   background-color: transparent;
   background-image: none;
   .box-shadow(none);
 }
-.btn-link {
+.bs-btn-link {
   border-color: transparent;
   cursor: pointer;
   color: @linkColor;
   .border-radius(0);
 }
-.btn-link:hover,
-.btn-link:focus {
+.bs-btn-link:hover,
+.bs-btn-link:focus {
   color: @linkColorHover;
   text-decoration: underline;
   background-color: transparent;
 }
-.btn-link[disabled]:hover,
-.btn-link[disabled]:focus {
+.bs-btn-link[disabled]:hover,
+.bs-btn-link[disabled]:focus {
   color: @grayDark;
   text-decoration: none;
 }
